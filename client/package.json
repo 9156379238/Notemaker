@@ -1,6 +1,7 @@
 {
   "name": "notebook",
   "version": "0.1.0",
+  "homepage": "http://9156379238.github.io/Notemaking",
   "private": true,
   "dependencies": {
     "@material-ui/core": "^4.11.4",
@@ -33,6 +34,8 @@
     "yup": "^0.32.8"
   },
   "scripts": {
+    "predeploy":"npm run build",
+    "deploy":"gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
